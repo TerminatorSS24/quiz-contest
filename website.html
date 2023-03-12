@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quiz Page</title>
+</head>
+<style>
+   body{
+            background-color:blueviolet;
+			background-size: cover;
+			background-position:initial;
+			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h1{
+        text-align: center;
+        color:red;
+        font-style:italic;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    h2{
+        text-align: center;
+        color:black;
+        font-style:inherit;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; 
+    }
+    h3{
+        text-align: center;
+        color:lawngreen;
+        font-style:italic;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    label{
+			display:inline-block;
+			margin:initial;
+			margin-top: 5px;
+			padding: 10px 10px;
+			font-size: 20px;
+            font-style: oblique;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			border-radius: 2px;
+			border: none;
+			background-color:coral;
+			color: black;
+			cursor:auto;
+    }
+    input[type="button"]{
+			display: block;
+			margin: auto;
+			margin-top: 50px;
+			padding: 10px 20px;
+			font-size: 20px;
+            font-style:unset;
+            font-family:"Papyrus", fantasy;
+			border-radius: 5px;
+			border: none;
+			background-color:gold;
+			color: black;
+			cursor: pointer;
+		}
+</style>
+<body>
+    <h1>Welcome to a simple MARVEL fanpage</h1>
+    <div class="form">
+            <h2>Let's see how many of you are true marvel fans</h2>
+            <br>
+            <label for="name"><b>NAME :</b></label>
+            <input type="text" placeholder="Enter your Name" id="name">
+            <input type="button" value="Let's start the quiz" id="submit" onclick="validate()"/>
+    </div>
+</body>
+</html>
